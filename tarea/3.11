@@ -1,0 +1,12 @@
+Algoritmo BonoPorAntiguedadDe5Anos
+	Definir antiguedad Como Entero;
+	Definir bono Como Real;
+    Escribir Sin Saltar "Ingrese el valor de antiguedad:";
+    Leer antiguedad;
+    Si antiguedad<=5 Entonces
+        bono <- antiguedad*100;
+    SiNo
+        bono <- 1000;
+    FinSi
+    Escribir "Valor de bono: ", bono;
+FinProceso

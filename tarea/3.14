@@ -1,0 +1,23 @@
+Algoritmo CalificacionEnLetra
+	Definir calificacion Como Entero;
+    Escribir Sin Saltar "Ingrese el valor de calificacion:";
+    Leer calificacion;
+    Si calificacion = 10 Entonces
+        Escribir "A";
+    FinSi
+    Si calificacion = 9 Entonces
+        Escribir "B";
+    FinSi
+    Si calificacion = 8 Entonces
+        Escribir "C";
+    FinSi
+    Si calificacion = 7 Entonces
+        Escribir "D";
+    FinSi
+    Si calificacion = 6 Entonces
+        Escribir "E";
+    FinSi
+    Si calificacion<=5 Entonces
+        Escribir "F";
+    FinSi
+FinProceso

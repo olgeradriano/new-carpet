@@ -1,0 +1,31 @@
+Algoritmo BecasMensualesAsignadasPorElPresidente
+	Definir edad Como Entero;
+	Definir beca,promedio Como Real;
+	Escribir Sin Saltar "Ingrese el valor de edad:";
+    Leer edad;
+    Escribir Sin Saltar "Ingrese el valor de promedio:";
+    Leer promedio;
+    beca <- 0;
+    Si edad>18 Y promedio>=9 Entonces
+        beca <- 2000;
+    FinSi
+    Si edad>18 Y promedio>=7.5 Y promedio<9 Entonces
+        beca <- 1000;
+    FinSi
+    Si edad>18 Y promedio>=6 Y promedio<7.5 Entonces
+        beca <- 500;
+    FinSi
+    Si edad<=18 Y promedio>=9 Entonces
+        beca <- 3000;
+    FinSi
+    Si edad<=18 Y promedio>=8 Y promedio<9 Entonces
+        beca <- 2000;
+    FinSi
+    Si edad>18 Y promedio>=6 Y promedio<8 Entonces
+        beca <- 100;
+    FinSi
+    Si promedio<6 Entonces
+        Escribir "Se envía carta de invitación a estudiar más";
+    FinSi
+    Escribir "Valor de beca: ", beca;
+FinProceso

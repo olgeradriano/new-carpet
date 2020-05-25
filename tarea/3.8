@@ -1,0 +1,33 @@
+Algoritmo BonoMensualPorAntiguedadOPorSueldo
+	Definir antiguedad Como Entero;
+	Definir sueldo,bono_por_antiguedad,bono_por_sueldo,bono_mensual Como Real;
+    Escribir Sin Saltar "Ingrese el valor de antiguedad:";
+    Leer antiguedad;
+    Escribir Sin Saltar "Ingrese el valor de sueldo:";
+    Leer sueldo;
+    bono_por_antiguedad <- 0;
+    Si antiguedad>2 Y antiguedad<5 Entonces
+        bono_por_antiguedad <- sueldo*0.2;
+    FinSi
+    Si antiguedad>=5 Entonces
+        bono_por_antiguedad <- sueldo*0.3;
+    FinSi
+    bono_por_sueldo <- 0;
+    Si sueldo<=1000 Entonces
+        bono_por_sueldo <- sueldo*0.25;
+    FinSi
+    Si sueldo>1000 Y sueldo<=3500 Entonces
+        bono_por_sueldo <- sueldo*0.15;
+    FinSi
+    Si sueldo>3500 Entonces
+        bono_por_sueldo <- sueldo*0.1;
+    FinSi
+    Si bono_por_antiguedad>bono_por_sueldo Entonces
+        bono_mensual <- bono_por_antiguedad;
+    SiNo
+        bono_mensual <- bono_por_sueldo;
+    FinSi
+    Escribir "Valor de bono mensual: ", bono_mensual;
+    Escribir "Valor de bono por antiguedad: ", bono_por_antiguedad;
+    Escribir "Valor de bono por sueldo: ", bono_por_sueldo;
+FinProceso
